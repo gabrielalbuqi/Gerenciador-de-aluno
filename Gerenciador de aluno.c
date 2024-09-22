@@ -89,7 +89,6 @@ void excluirAluno() {
     int i;
     for (i = 0; i < totalAlunos; i++) {
         if (alunos[i].matricula == matricula) {
-            // Deslocar todos os alunos à frente deste na lista para uma posição anterior
             for (int j = i; j < totalAlunos - 1; j++) {
                 alunos[j] = alunos[j + 1];
             }
